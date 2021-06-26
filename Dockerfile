@@ -8,3 +8,4 @@ ENV PORT 8080
 EXPOSE ${PORT}
 VOLUME [ "/app=data" ]
 CMD gunicorn -b :$PORT -c gunicorn.conf.py main:app
+
